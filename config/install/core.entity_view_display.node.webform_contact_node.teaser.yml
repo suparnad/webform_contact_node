@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.webform_contact_node.body
+    - node.type.webform_contact_node
+  module:
+    - text
+    - user
+id: node.webform_contact_node.teaser
+targetEntityType: node
+bundle: webform_contact_node
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {}
+  links:
+    weight: 100
+hidden: {}

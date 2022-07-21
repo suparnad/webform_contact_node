@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform_contact_node
+name: "Contact page"
+type: webform_contact_node
+description: "Content type that can be used to add <em>contact details</em> after each webform submission."
+help: ""
+new_revision: false
+preview_mode: 1
+display_submitted: true

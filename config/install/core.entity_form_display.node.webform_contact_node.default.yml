@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.webform_contact_node.body
+    - field.field.node.webform_contact_node.field_email
+    - node.type.webform_contact_node
+  module:
+    - text
+    - user
+id: node.webform_contact_node.default
+targetEntityType: node
+bundle: webform_contact_node
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_textarea_with_summary
+    weight: 101
+    settings: {}
+    third_party_settings: {}
+  field_email:
+    label: hidden
+    type: text_textarea
+    weight: 103
+    settings: {}
+    third_party_settings: {}
+hidden: {}

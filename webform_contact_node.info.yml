@@ -1,0 +1,7 @@
+name: Webform create new node
+type: module
+description: Provides logic to create a new content type contact and add node after each submission.
+core_version_requirement: ^8 || ^9
+package: "custom"
+dependencies:
+  - webform

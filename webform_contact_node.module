@@ -1,0 +1,18 @@
+<?php
+
+use \Drupal\Core\Routing\RouteMatchInterface;
+
+function webform_contact_node_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+
+      // Main module help for the webform_messagefocus module.
+    case 'help.page.webform_c reate_node':
+      $output = '';
+      $output .= '<h3>' . t('About page') . '</h3>';
+      $output .= '<p>' . t('Provides logic to article type node after each module submission') . '</p>';
+      return $output;
+
+    default:
+  }
+}
