@@ -6,11 +6,11 @@ function webform_contact_node_help($route_name, RouteMatchInterface $route_match
 {
   switch ($route_name) {
 
-      // Main module help for the webform_messagefocus module.
-    case 'help.page.webform_c reate_node':
+      // Main module help for the webform_contact_node module.
+    case 'help.page.webform_contact_node':
       $output = '';
       $output .= '<h3>' . t('About page') . '</h3>';
-      $output .= '<p>' . t('Provides logic to article type node after each module submission') . '</p>';
+      $output .= '<p>' . t('Provides logic to add node into a custom content type contact, after each webform submission') . '</p>';
       return $output;
 
     default:
